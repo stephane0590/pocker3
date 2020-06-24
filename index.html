@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<title>Faux Poker</title>
+</head>
+<body>
+
+	<div id='container'>
+
+		<section class="person">
+			<h2>Hero</h2>
+			<div class="joueur">
+				<img class="foto" src="assets/img/avatars/person1.png" alt="">
+			</div>
+			<div class="cart_jeux">
+				<div class="cart"><img id="cart_hero_1" class="cart_img" src="assets/img/cards/back.png" alt=""></div>
+				<div class="cart"><img id="cart_hero_2" class="cart_img" src="assets/img/cards/back.png" alt=""></div>
+			</div>
+			<div id="message_hero"></div>
+		</section>
+
+		<section>
+
+			<div id="start_jeux">
+				<button id="bouton_jouer" class="bouton_jeux" style="background-image: url(assets/img/fonds/bouton.png);" onclick="game()">JOUER !</button>
+			</div>
+			
+		</section>
+
+		<section class="person">
+			<h2>Vilain</h2>
+			<div class="joueur">
+				<img class="foto" src="assets/img/avatars/person2.png" alt="">
+			</div>
+			<div class="cart_jeux">
+				<div class="cart"><img id="cart_vilain_1" class="cart_img" src="assets/img/cards/back.png" alt=""></div>
+				<div class="cart"><img id="cart_vilain_2" class="cart_img" src="assets/img/cards/back.png" alt=""></div>
+			</div>
+			<div id="message_vilain"></div> 
+		</section>
+
+	</div>
+
+	<div class="tapis">
+		<div class="cart_tapis">
+			<div class="cart"><img id="cart_tapis_1" class="cart_img" src="assets/img/cards/back.png" alt=""></div>
+			<div class="cart"><img id="cart_tapis_2" class="cart_img" src="assets/img/cards/back.png" alt=""></div>
+			<div class="cart"><img id="cart_tapis_3" class="cart_img" src="assets/img/cards/back.png" alt=""></div>
+			<div class="cart"><img id="cart_tapis_4" class="cart_img" src="assets/img/cards/back.png" alt=""></div>
+			<div class="cart"><img id="cart_tapis_5" class="cart_img" src="assets/img/cards/back.png" alt=""></div>
+		</div>
+	</div>
+
+	
+	<script src="assets/js/dealer.js"></script>
+	<script src="assets/js/Card.js"></script>
+    <script src="assets/js/Deck.js"></script>
+    <script src="assets/js/cardsByValues.js"></script>
+    <script src="assets/js/isAFlush.js"></script>
+    <script src="assets/js/isAFull.js"></script>
+    <script src="assets/js/isAPair.js"></script>
+    <script src="assets/js/afficherResultat.js"></script>
+    <script src="assets/js/orderCards.js"></script>
+    <script src="assets/js/occurences.js"></script>
+    <script src="assets/js/dealer.js"></script>
+    <script src="assets/s/bestCombo.js"></script>
+    <script src="assets/js/compareCombos.js"></script>
+    <script src="assets/js/dealer.js"></script>
+    <script src="assets/js/afficherCartes.js"></script>
+	<script src="assets/js/game.js"></script>
+	
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
